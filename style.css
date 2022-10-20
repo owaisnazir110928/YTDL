@@ -1,15 +1,21 @@
-* {
-	text-align: center;
+div{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
-
-body {
-	display: grid;
-	grid-template-columns: auto;
+.div{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	align-items: baseline;
+	gap: 30px;
 }
 
 .heading {
 	font-family: Arial;
-	margin-top: 40vh;
 }
 
 .URL-input,
@@ -33,11 +39,12 @@ body {
 }
 
 .convert-button {
-	margin: 2% auto;
+	margin: 1% auto;
 	border: 2px solid #0485ff;
 	background: #0485ff;
 	color: white;
 	transition: 0.15s;
+	border-radius: 5%;
 }
 
 .convert-button:hover {
@@ -45,7 +52,13 @@ body {
 	border-color: #016acc;
 }
 
-@media only screen and (max-width: 600px) {
+.opt {
+	width: 90px;
+	margin-top: 20px;
+	text-align: center;
+	padding: 10px;
+}
+@media (max-width: 600px) {
 	body {
 		display: grid;
 		grid-template-columns: auto;
@@ -61,11 +74,4 @@ body {
 		margin: 7% auto;
 		width: 100%;
 	}
-}
-
-.opt {
-	width: 30vw;
-	margin: 2% auto;
-	padding: 4px;
-	border-radius: 7%;
 }
